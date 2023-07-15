@@ -1,0 +1,5 @@
+FROM amazoncorretto
+COPY . /usr/src/ticTacToe
+WORKDIR /usr/src/ticTacToe
+RUN javac Main.java
+CMD ["java", "Main"]
